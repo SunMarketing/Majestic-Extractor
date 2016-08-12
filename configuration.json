@@ -1,7 +1,37 @@
 {
-    "config": "heureka-extractor-config",
-    "configData": {
-        "parameters": {
-        }
-    }
+	"title": "Parameters",
+	"type": "object",
+	"required": [
+		"domain",
+		"#token",
+		"bucket",
+		"commands"
+	],
+	"properties": {
+		"domain": {
+			"title": "Domain",
+			"type": "string",
+			"minLength": 1,
+			"default": ""
+		},
+		"#token": {
+			"title": "Token",
+			"type": "string",
+			"format": "password",
+			"minLength": 1,
+			"default": ""
+		},
+		"commands": {
+			"title": "Commands",
+			"type": "string",
+			"minLength": 1,
+			"default": "-14 day"
+		},
+		"bucket" : {
+			"title": "Output bucket",
+			"type": "string",
+			"minLength": 1,
+			"default": "in.c-ex-pricemania-sk"
+		}
+	}
 }
