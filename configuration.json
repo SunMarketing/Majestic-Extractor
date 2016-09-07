@@ -28,7 +28,7 @@
 			"format": "password",
 			"minLength": 1,
 			"default": ""
-		}
+		},
 		"commands": {
 			"title": "Commands",
 			"type": "string",
