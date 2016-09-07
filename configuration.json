@@ -5,7 +5,8 @@
 		"domain",
 		"#token",
 		"bucket",
-		"commands"
+		"commands",
+		"#application_token"
 	],
 	"properties": {
 		"domain": {
@@ -21,17 +22,24 @@
 			"minLength": 1,
 			"default": ""
 		},
+		"#application_token": {
+			"title": "Application token",
+			"type": "string",
+			"format": "password",
+			"minLength": 1,
+			"default": ""
+		}
 		"commands": {
 			"title": "Commands",
 			"type": "string",
 			"minLength": 1,
-			"default": "-14 day"
+			"default": "GetBackLinksHistory|datasource=historic,GetRefDomains,GetBackLinkData"
 		},
 		"bucket" : {
 			"title": "Output bucket",
 			"type": "string",
 			"minLength": 1,
-			"default": "in.c-ex-pricemania-sk"
+			"default": "in.c-ex-majestic-seo"
 		}
 	}
 }
